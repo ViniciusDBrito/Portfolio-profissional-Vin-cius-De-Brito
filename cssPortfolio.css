@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.interfaceSite{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2 .titulo{
+    text-align: center;
+    color: white;
+    font-size: 43px;
+}
+
+header{
+    background-image: linear-gradient(rgba(165, 16, 16, 0.822), rgb(0, 0, 0));
+    padding: 25px 4%;
+}
+
+header > .interfaceSite{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*Deixa  o  mais distante 1 do  outro*/
+}
+
+header a{
+    color: rgb(241, 231, 231);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    transform: scale(1.15);
+    transition: 1;
+
+}
+
+header nav ul{
+    list-style-type: none;  /*Bolinha*/
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+header .botaoContato button{
+    color: rgb(165, 16, 16);
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgb(235, 224, 224);
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+header .botaoContato button:hover{
+    box-shadow: 0px 0px 8px rgba(24, 23, 23, 0.87);
+    transform: scale(1.05);
+}
+
+
+section.InicioSite{
+    padding: 40px 4%;
+    margin: 35px;
+}
+
+section .InicioSite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+section.InicioSite .textoInicio1{
+    margin: 25px;
+    margin-top: 160px;
+}
+
+.textoInicio1 h1{
+    color: white;
+    font-size: 40;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 35px;
+}
+.textoInicio1 h1 span{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 30px;
+    display: block;
+    color: rgb(165, 16, 16);
+}
+
+.InicioSite .textoInicio1 h1 span{
+    color: rgb(165, 16, 16);
+}
+
+.InicioSite .textoInicio1  p{
+    color: white;
+    font-size: 28;
+    font-weight: 500;
+    margin: 32px;
+    width: 400px;
+    line-height: 23px;
+}   
+
+.InicioSite .textoInicio1 p .span2{
+    color: rgb(165, 16, 16);
+    font-size: 26px;
+}
+
+section.especialidades{
+    padding: 40 4%;
+    margin-bottom: 20px;
+}
+
+section.especialidades .flex{
+    gap: 20px;
+}
+
+.interfaceSite h2{
+    text-align: center;
+    color: white;
+    font-size: 43px;
+    margin-top: 60px;
+}
+
+.interfaceSite h2 span{
+    color: rgb(165, 16, 16);
+    font-size: 40px;
+}
+
+.especialidades .especialidadesCaixas{
+    color: white;
+    padding: 45px;
+    width: 520px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 85px;
+    margin: 35px;
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+.especialidades .especialidadesCaixas:hover{
+    box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.87);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.especialidades .especialidadesCaixas h3{
+    color: white;
+    font-size: 28px;
+    margin: 18px 0;
+}
+
+.especialidadesCaixas h3 .span2{
+    color: rgb(165, 16, 16);
+    font-size: 28px;
+}
+
+.especialidadesCaixas p span{
+    color: rgb(165, 16, 16);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+section.sobreMim{
+    padding: 90px 4%;
+}
+section.sobreMim .flex{
+    align-items: center;
+    gap: 110px;
+}
+
+.sobreMim .textoSobre{
+    color: white;
+    margin-top: 110px;
+}
+
+.sobreMim .textoSobre h2{
+    font-size: 40px;
+    text-align: left;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+
+.sobreMim .imagemSobre img{
+    padding: 30px 4%;
+}
+
+section.sobreMim .imagemSobre img{
+    position: relative;
+    animation: efeitoImagem1 1.6s ease-in-out infinite alternate;
+}
+
+@keyframes efeitoImagem1{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+.sobreMim .textoSobre h2 span{
+    display: block;
+}
+
+.sobreMim .textoSobre p{
+    margin: 10px;
+    text-align: justify;
+}
+
+.sobreMim .textoSobre .botaoSocial{
+    padding: 10px;
+}
+
+.sobreMim .botaoSocial button{
+    background-color: black;
+}
+
+.sobreMim .textoSobre .botaoSocial button{
+    margin: 0 7px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+
+section.sobreMim .botaoSocial button:hover{
+    box-shadow: 0px 0px 15px rgba(110, 9, 9, 0.877);
+    transform: scale(1.14);
+}
+
+section.projetos{
+    padding: 10px 4%;
+    margin-bottom: 50px;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    margin-top: 55px;
+}
+
+
+.imgProjeto{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6s;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.imgProjeto:hover{
+    background-position: 100% 100%;
+}
+
+section.formulario{
+    padding: 35px 4%;
+}
+
+.formulario p{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(43, 41, 41, 0.781);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+    height: 130px;
+}
+
+form .botaoEnviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .botaoEnviar input{
+    width: 150px;
+    background-color: rgb(165, 16, 16);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+
+form .botaoEnviar input:hover{
+    box-shadow: 0px 0px 8px rgba(24, 23, 23, 0.87);
+    transform: scale(1.05);
+}
+
+
+
+footer{
+    padding: 10px 4%;
+    box-shadow: 0 0 40px 6px rgba(110, 9, 9, 0.877);
+}
+
+footer .flex{
+    justify-content: center;
+}
+
+footer .rodape .conteudoRodape{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: 1s;
+    font-weight: normal;
+}
+
+footer .rodape .conteudoRodape img{
+    padding: 5px;
+    margin: 0;
+}
+
+.conteudoRodape img:hover{
+    transform: scale(1.05);
+    transition: 1;
+    cursor: pointer;
+}
+
+.conteudoRodape p:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
